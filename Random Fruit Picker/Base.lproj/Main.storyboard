@@ -22,6 +22,9 @@
                                 <rect key="frame" x="16" y="556.33333333333337" width="382" height="135.66666666666663"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="37"/>
                                 <state key="normal" title="Click to Pick"/>
+                                <connections>
+                                    <action selector="pickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xgd-V2-2Tk"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random Fruit Picker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="87q-YE-Cpl">
                                 <rect key="frame" x="16" y="30" width="382" height="135.66666666666666"/>
@@ -53,6 +56,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="fruitImageView" destination="l2K-TL-tvf" id="D3r-fb-ibY"/>
+                        <outlet property="nameLabel" destination="87q-YE-Cpl" id="Wje-e2-IeU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
