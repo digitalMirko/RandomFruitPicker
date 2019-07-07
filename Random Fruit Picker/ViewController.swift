@@ -23,6 +23,19 @@ class ViewController: UIViewController {
     // Picker button
     @IBAction func pickButton(_ sender: Any) {
         
+        // fruit array
+        let fruitArray = ["Apple","Bananas","Cherries","Grapes","Lemon","Orange","Pear","Strawberry"]
+        
+        // randomly selected fruit item
+        let chosenFruit: String? = fruitArray.randomElement()
+        
+        // top label text
+        nameLabel.text = chosenFruit
+        
+        // fruit selected image shown
+        if let imageToLoad = chosenFruit {
+            fruitImageView.image = UIImage(named: imageToLoad)
+        }
         
     }
     
